@@ -89,32 +89,12 @@
 ├── master
     └── config.sk
 ├── main
-│   ├── setspawn.sk
-│   ├── spawn.sk
-│   ├── to.sk
-│   ├── bring.sk
-│   ├── tor.sk
-│   ├── bringa.sk
-│   ├── fly.sk
-│   ├── clearchat.sk
-│   ├── staffchat.sk
-│   ├── vanish.sk
-│   ├── broadcast.sk
+│   ├── teleport.sk
+│   ├── staff.sk
 │   ├── telefrag.sk
-│   ├── report.sk
-│   ├── suggest.sk
-│   ├── reportlist.sk
-│   ├── suggestlist.sk
-│   └── clearlist.sk
+│   └── lists.sk
 ├── utilities
-│   ├── home.sk
-│   ├── sethome.sk
-│   ├── warp.sk
-│   ├── setwarp.sk
-│   ├── delwarp.sk
-│   ├── tpa.sk
-│   ├── tpaccept.sk
-│   ├── tpdeny.sk
+│   ├── warps.sk
 │   ├── msg.sk
 │   ├── reply.sk
 │   ├── afk.sk
