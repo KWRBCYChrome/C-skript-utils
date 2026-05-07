@@ -86,6 +86,8 @@
 ## Folder tree
 ```text
 .
+├── master
+    └── config.sk
 ├── main
 │   ├── setspawn.sk
 │   ├── spawn.sk
@@ -122,6 +124,5 @@
 │   ├── whois.sk
 │   ├── seen.sk
 │   ├── stats.sk
-│   ├── repair.sk
-│   └── config.sk
+│   └── repair.sk
 └── README.md
