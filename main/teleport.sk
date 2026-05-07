@@ -1,8 +1,4 @@
-import "master/config.sk"
-
-# -----------------------------------------------------------------
 # /setspawn – set the location used by /spawn
-# -----------------------------------------------------------------
 command /setspawn:
     description: Set the location used by /spawn
     permission: none
@@ -10,9 +6,7 @@ command /setspawn:
         set {spawn_location} to location of player
         send "%{prefix}%&aSpawn location set!" to player
 
-# -----------------------------------------------------------------
 # /spawn – teleport to the saved spawn point
-# -----------------------------------------------------------------
 command /spawn:
     description: Teleport to the saved spawn point
     permission: none
@@ -23,9 +17,7 @@ command /spawn:
         else:
             send "%{prefix}%&cSpawn location not set. Use /setspawn first." to player
 
-# -----------------------------------------------------------------
 # /to <player> – teleport to a specific player
-# -----------------------------------------------------------------
 command /to <offlineplayer>:
     description: Teleport to a player
     permission: none
@@ -36,9 +28,7 @@ command /to <offlineplayer>:
         else:
             send {msg_player_not_found} to player
 
-# -----------------------------------------------------------------
 # /bring <player> – bring a specific player to you
-# -----------------------------------------------------------------
 command /bring <offlineplayer>:
     description: Bring a player to you
     permission: none
@@ -50,9 +40,7 @@ command /bring <offlineplayer>:
         else:
             send {msg_player_not_found} to player
 
-# -----------------------------------------------------------------
 # /tor – teleport to a random online player
-# -----------------------------------------------------------------
 command /tor:
     description: Teleport to a random online player
     permission: none
@@ -77,9 +65,7 @@ command /tor:
         teleport player to {_target}
         send "%{prefix}%&aTeleported to random player % {_target}%." to player
 
-# -----------------------------------------------------------------
 # /bringa – bring every online player to you
-# -----------------------------------------------------------------
 command /bringa:
     description: Bring every online player to you
     permission: none
