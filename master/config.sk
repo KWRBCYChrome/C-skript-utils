@@ -1,0 +1,6 @@
+set {prefix} to "&6[MyPlugin]&r"
+
+# reusable messages
+set {msg_no_perm}        to "%{prefix}%&cYou don't have permission to use this command."
+set {msg_player_not_found} to "%{prefix}%&cPlayer not found."
+set {msg_invalid_usage}   to "%{prefix}%&cInvalid usage. Type &e/help &cfor help."
