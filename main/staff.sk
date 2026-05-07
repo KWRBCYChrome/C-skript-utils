@@ -1,0 +1,63 @@
+# /fly [player] – toggle flight
+command /fly [<offlineplayer>]:
+    description: Toggle flight for yourself or another player
+    permission: skript.mod
+    trigger:
+        if arg-1 is set:
+            if arg-1 is online:
+                set {_target} to arg-1
+            else:
+                send {msg_player_not_found} to player
+                stop
+        else:
+            set {_target} to player
+
+        if {_target} is flying:
+            set flying of {_target} to false
+            send "%{prefix}%&aFlight disabled for %{_target}%." to player
+            if {_target} is not player:
+                send "%{prefix}%&aYour flight has been disabled by %player%." to {_target}
+        else:
+            set flying of {_target} to true
+            send "%{prefix}%&aFlight enabled for %{_target}%." to player
+            if {_target} is not player:
+                send "%{prefix}%&aYour flight has been enabled by %player%." to {_target}
+
+# /clearchat – wipe chat
+command /clearchat:
+    description: Clear the chat for all players
+    permission: skript.mod
+    trigger:
+        loop 100:
+            broadcast ""
+        broadcast "%{prefix}%&aChat cleared by %player%."
+
+# /sc <text> – staff chat (visible to those with skript.mod)
+command /sc <text>:
+    description: Staff‑only chat channel
+    permission: skript.mod
+    trigger:
+        loop all players:
+            if loop-player has permission "skript.mod":
+                send "%{prefix}%&b[Staff] %player%: %arg-1%" to loop-player
+
+# /vanish – toggle invisibility (hide from tablist & players)
+command /vanish:
+    description: Hide yourself from all players and the tab list
+    permission: skript.mod
+    trigger:
+        if {vanished.%player%} is true:
+            show player from all
+            delete {vanished.%player%}
+            send "%{prefix}%&aYou are now visible." to player
+        else:
+            hide player from all
+            set {vanished.%player%} to true
+            send "%{prefix}%&aYou are now vanished." to player
+
+# /broadcast <text> – server‑wide announcement
+command /broadcast <text>:
+    description: Broadcast a message to the whole server
+    permission: skript.mod
+    trigger:
+        broadcast "%{prefix}%&c%arg-1%"
