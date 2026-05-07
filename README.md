@@ -69,7 +69,7 @@
 | **coinflip**          | none                                      | Flip a coin (heads/tails)                                                                        | none |
 | **whoami**            | none                                      | Display your rank, gamemode, world, etc.                                                          | none |
 | **randomtp**          | none                                      | Teleport to a random safe location                                                                | none |
-| **hug**               | `<player>`                                | Send a friendly “hug” message to a player                                                         | none |
+| **action**               | `[hug/kiss/five]`                                | Broadcast a friendly message directed towards a player                                                         | none |
 
 
 
