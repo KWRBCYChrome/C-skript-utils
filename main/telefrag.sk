@@ -1,0 +1,10 @@
+command /telefrag <offlineplayer>:
+    description: Teleport to a player and instantly kill them
+    permission: skript.mod
+    trigger:
+        if arg-1 is online:
+            teleport player to arg-1
+            kill arg-1
+            send "%{prefix}%&aTelefragged %arg-1%!" to player
+        else:
+            send {msg_player_not_found} to player
