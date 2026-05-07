@@ -1,6 +1,9 @@
 set {prefix} to "&6[MyPlugin]&r"
 
 # reusable messages
-set {msg_no_perm}        to "%{prefix}%&cYou don't have permission to use this command."
+set {msg_no_perm} to "%{prefix}%&cYou don't have permission to use this command."
 set {msg_player_not_found} to "%{prefix}%&cPlayer not found."
-set {msg_invalid_usage}   to "%{prefix}%&cInvalid usage. Type &e/help &cfor help."
+set {msg_invalid_usage} to "%{prefix}%&cInvalid usage. Type &e/help &cfor help."
+set {msg_no_console} to "%{prefix}%&cThis command can't be used in the console."
+set {msg_no_player} to "%{prefix}%&cThis command can't be used in-game."
+set {msg_cmd_cooldown} to "%{prefix}%&cPlease wait before using this command again."
