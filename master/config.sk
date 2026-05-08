@@ -1,4 +1,4 @@
-set {prefix} to "&6[MyPlugin]&r"
+set {prefix} to "<#DAA500>&l&nS<#E1B733>&l&nk<#E9C966>&l&nr<#F0DB99>&l&ni<#F8EDCC>&l&np<#FFFFFF>&l&nt"
 
 # reusable messages
 set {msg_no_perm} to "%{prefix}%&cYou don't have permission to use this command."
