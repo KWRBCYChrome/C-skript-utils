@@ -1,7 +1,6 @@
 # /setspawn – set the location used by /spawn
 command /setspawn:
     description: Set the location used by /spawn
-    permission: none
     trigger:
         set {spawn_location} to location of player
         send "%{prefix}%&aSpawn location set!" to player
@@ -9,7 +8,6 @@ command /setspawn:
 # /spawn – teleport to the saved spawn point
 command /spawn:
     description: Teleport to the saved spawn point
-    permission: none
     trigger:
         if {spawn_location} is set:
             teleport player to {spawn_location}
@@ -20,7 +18,7 @@ command /spawn:
 # /to <player> – teleport to a specific player
 command /to <ofline player>:
     description: Teleport to a player
-    permission: none
+    permission: skript.mod
     trigger:
         if arg-1 is online:
             teleport player to arg-1
@@ -31,7 +29,7 @@ command /to <ofline player>:
 # /bring <player> – bring a specific player to you
 command /bring <offline player>:
     description: Bring a player to you
-    permission: none
+    permission: skript.mod
     trigger:
         if arg-1 is online:
             teleport arg-1 to player
@@ -43,7 +41,7 @@ command /bring <offline player>:
 # /tor – teleport to a random online player
 command /tor:
     description: Teleport to a random online player
-    permission: none
+    permission: skript.mod
     trigger:
         # Build a list of all online players except the executor
         set {_list::*} to all players
@@ -68,7 +66,7 @@ command /tor:
 # /bringa – bring every online player to you
 command /bringa:
     description: Bring every online player to you
-    permission: none
+    permission: skript.mod
     trigger:
         loop all players:
             if loop-player is not player:
