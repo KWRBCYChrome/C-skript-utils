@@ -4,6 +4,9 @@ command /telefrag <offlineplayer>:
     trigger:
         if arg-1 is online:
             teleport player to arg-1
+            play sound "block.respawn_anchor.charge" at 
+            create safe explosion of force 3 at arg-1
+            wait 0.7 seconds
             kill arg-1
             send "%{prefix}%&aTelefragged %arg-1%!" to player
         else:
