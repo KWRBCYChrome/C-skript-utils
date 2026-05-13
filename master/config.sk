@@ -1,9 +1,7 @@
-set {prefix} to "<#DAA500>&l&nS<#E1B733>&l&nk<#E9C966>&l&nr<#F0DB99>&l&ni<#F8EDCC>&l&np<#FFFFFF>&l&nt"
-
-# reusable messages
-set {msg_no_perm} to "%{prefix}%&cYou don't have permission to use this command."
-set {msg_player_not_found} to "%{prefix}%&cPlayer not found."
-set {msg_invalid_usage} to "%{prefix}%&cInvalid usage. Type &e/help &cfor help."
-set {msg_no_console} to "%{prefix}%&cThis command can't be used in the console."
-set {msg_no_player} to "%{prefix}%&cThis command can't be used in-game."
-set {msg_cmd_cooldown} to "%{prefix}%&cPlease wait before using this command again."
+on script load:
+  set {prefix} to "&cEDIT THIS PREFIX IN <#FF0000>&l&nc<#FF2020>&l&no<#FF4040>&l&nn<#FF6060>&l&nf<#FF8080>&l&ni<#FF9F9F>&l&ng<#FFBFBF>&l&n.<#FFDFDF>&l&ns<#FFFFFF>&l&nk "
+  set {msg_no_perm} to "%{prefix}%&cYou don't have permission to use this command."
+  set {msg_player_not_found} to "%{prefix}%&cPlayer not found."
+  set {msg_invalid_usage} to "%{prefix}%&cInvalid usage. Type &e/help &cfor help."
+  set {msg_no_console} to "%{prefix}%&cThis command can't be used in the console."
+  set {msg_cmd_cooldown} to "%{prefix}%&cPlease wait before using this command again."
