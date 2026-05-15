@@ -94,14 +94,9 @@
 │   └── lists.sk
 ├── utilities
 │   ├── warps.sk
-│   ├── msg.sk
-│   ├── reply.sk
-│   ├── afk.sk
-│   ├── nickname.sk
-│   ├── ping.sk
-│   ├── uptime.sk
-│   ├── whois.sk
-│   ├── seen.sk
-│   ├── stats.sk
+│   ├── messages.sk
+│   ├── player.sk
 │   └── repair.sk
+├── other
+│   └── actions.sk
 └── README.md
