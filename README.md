@@ -43,7 +43,7 @@
 | **clearwarnings**     | `<player>`                                | Remove all warnings for a player                                                                  | skript.mod |
 | **freeze**            | none                                      | Freeze all player movement (maintenance mode)                                                    | skript.admin |
 | **unfreeze**          | none                                      | Unfreeze the server                                                                              | skript.admin |
-| **gmc** / **gms** / **gma** / **gmsp** | none                      | Quick‑switch your own gamemode (creative, survival, adventure, spectator)                        | none |
+| **gmc** / **gms** / **gma** / **gmsp** | skript.mod                      | Quick‑switch your own gamemode (creative, survival, adventure, spectator)                        | none |
 | **speed**             | `<value>` `[player]`                      | Change walk/fly speed for you or another player                                                   | skript.mod |
 | **invsee**            | `<player>`                                | Open a GUI to view another player’s inventory                                                     | skript.mod |
 | **enderchest / echest**        | `[player]` (optional)                     | Open your own (or another’s) ender chest                                                          | skript.mod |
